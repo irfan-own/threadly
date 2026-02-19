@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.navbar a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #1D232C;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar h1 {
+    margin-left: 10px;
+}
+
+.navbar i {
+    display: none;
+}
+
+/* Side Navbar */
+
+.side-navbar {
+    position: fixed;
+    height: 100%;
+    width: 55%;
+    background-color: #1D232C;
+    top: 0;
+    left: -55%;
+    padding-top: 40px;
+    transition: 1.8s
+}
+
+.side-navbar a {
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    width: fit-content;
+    text-decoration: none;
+    display: block;
+}
+
+.side-navbar a:hover {
+    text-decoration: underline;
+}
+
+.side-navbar i {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    color: white;
+    padding: 5px;
+}
+
+/* Header */
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.header button {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #1D232C;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.header {
+    margin-right: 50px;
+}
+
+/* Customer */
+.customer-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.customer-2 {
+    display: flex;
+    gap: 10px;
+}
+
+.customer-3 {
+    background-color: #f2f4f7;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.customer-container {
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* New Arrival*/
+
+.products {
+    position: relative;
+}
+
+.products button {
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    background-color: #f0f0f0;
+    color: #1D232C;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 170px;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.new-arrival h2 {
+    padding-left: 20px;
+}
+
+/* News Letter */
+
+.news-letter input {
+    display: block;
+    width: 80%;
+    height: 20px;
+    border-color: black;
+    border-width: 3px;
+    padding: 10px;
+}
+
+.news-letter button {
+    background-color: #1D232C;
+    color: #f2f4f7;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #1D232C;
+    height: 180px;
+    padding-left: 80px;
+    padding-top: 100px;
+    margin-top: 20px;
+    color: white;
+}
+
+/* Searchbar */
+.searchbar input{
+    border: none;
+    width: 95%;
+    height: 15px;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.searchbar{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 25px;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.searchbar input:focus{
+    outline: none;
+}
+
+/* Dress Section */
+.dress-section img{
+    width: 220px;
+    height: 220px;
+    border-radius: 10px;
+}
+
+.dress-section{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.products-box{
+    flex-basis: 25%;
+    margin-top: 10px;
+}
+
+.products-box p{
+    padding-left: 70px;
+}
+
+/* Contact */
+
+.contact{
+    background-color: #1D232C;
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    padding-top: 50px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.contact-box{
+    width: 90%;
+    height: 400px;
+    margin: auto;
+}
+
+.input-1{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.msg-input{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.contact h2{
+    margin-bottom: 20px;
+}
+
+.contact button{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact input:focus{
+    outline: none;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .navbar p {
+        display: none;
+    }
+
+    .navbar i {
+        display: block;
+        padding-right: 10px;
+    }
+
+    .image-section {
+        display: none;
+    }
+
+    .customer-1 {
+        display: none;
+    }
+
+    .customer-2 {
+        flex-direction: column;
+    }
+
+}
